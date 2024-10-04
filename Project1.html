@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <style>
+      body {
+        background-image: url("https://t4.ftcdn.net/jpg/02/94/26/33/360_F_294263329_1IgvqNgDbhmQNgDxkhlW433uOFuIDar4.jpg");
+        background-size: cover;
+        background-position: center;
+        zoom: 90%;
+        font-family: Arial, sans-serif;
+      }
+
+      .second {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .second img {
+        width: 100%;
+        height: auto;
+        border: 4px solid #f5f3f5;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      #clickHereButton {
+        margin-top: 20px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #333;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #666;
+      }
+
+      hr {
+        margin: 30px 0;
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="second">
+      <h1>Welcome to Our Restaurant</h1>
+      <h2>Your Favorite Place to Dine</h2>
+      <p>
+        We offer the best food in town with a delightful ambiance. Check out our
+        menu and visit us for an unforgettable experience.
+      </p>
+
+      <img
+        src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FmZXxlbnwwfHwwfHx8MA%3D%3D"
+        alt="Restaurant Image"
+      />
+
+      <button id="clickHereButton">Click Here</button>
+    </div>
+
+    <script>
+      document
+        .getElementById("clickHereButton")
+        .addEventListener("click", function () {
+          let userName = prompt("What is your name?");
+          if (userName) {
+            alert("Hi " + userName + ", welcome to my cafe!");
+          } else {
+            alert("Welcome to my cafe!");
+          }
+        });
+    </script>
+  </body>
+</html>

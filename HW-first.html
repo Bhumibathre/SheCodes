@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+        outline: none;
+      }
+
+      h1 {
+        font-size: 24px;
+        color: #007bff;
+        margin-bottom: 20px;
+      }
+
+      .temperature {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .forecast {
+        margin-bottom: 20px;
+      }
+
+      .day {
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #fff;
+        transition: box-shadow 0.3s ease, background-color 0.3s ease;
+      }
+
+      .day p {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      .day:hover,
+      .day:focus-within {
+        box-shadow: 0 0 15px yellow;
+        background-color: #ffffe0;
+      }
+
+      .change-city-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 40px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 16px;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+      }
+
+      .change-city-btn:hover {
+        background-color: #0056b3;
+      }
+
+      footer {
+        margin-top: 20px;
+      }
+
+      footer p {
+        font-size: 14px;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currently 21° in Tokyo</h1>
+      <div class="temperature">
+        <span>13° / 23°</span>
+      </div>
+
+      <div class="forecast">
+        <div class="day" tabindex="0">
+          <p>🌧️ Tomorrow</p>
+          <p>10° / 22°</p>
+        </div>
+        <div class="day" tabindex="0">
+          <p>☁️ Saturday</p>
+          <p>15° / 17°</p>
+        </div>
+        <div class="day" tabindex="0">
+          <p>☀️ Sunday</p>
+          <p>25° / 28°</p>
+        </div>
+      </div>
+
+      <button class="change-city-btn">Change city</button>
+
+      <footer>
+        <p>Coded by Bhumi</p>
+      </footer>
+    </div>
+  </body>
+</html>
