@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather Application</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #83a4d4, #b6fbff);
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      header {
+        margin-bottom: 30px;
+      }
+
+      form {
+        display: flex;
+        justify-content: center;
+      }
+
+      input[type="search"] {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        width: 200px;
+        margin-right: 10px;
+      }
+
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      .current-weather {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 30px;
+      }
+
+      .current-weather h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .current-weather p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      .current-weather div:last-child {
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .forecast-weather ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 600px;
+        padding: 0;
+      }
+
+      .forecast-weather li {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        flex: 1;
+        margin: 0 10px;
+        font-size: 16px;
+      }
+
+      .forecast-weather li strong {
+        font-size: 18px;
+      }
+
+      footer {
+        margin-top: auto;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      footer a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <form>
+        <input type="search" placeholder="Enter a city.." required />
+        <input type="submit" value="Search" />
+      </form>
+    </header>
+    <main>
+      <div class="current-weather">
+        <div>
+          <h1>Paris</h1>
+          <p>
+            Saturday 15:32, moderate rain <br />
+            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+          </p>
+        </div>
+        <div>☀️ 14°C</div>
+      </div>
+      <div class="forecast-weather">
+        <ul>
+          <li>
+            Sun 🌤️
+            <br />
+            <strong>14°C</strong> - 18°C
+          </li>
+          <li>
+            Mon 🌤️
+            <br />
+            <strong>14°C</strong> - 18°C
+          </li>
+          <li>
+            Tue 🌤️
+            <br />
+            <strong>14°C</strong> - 18°C
+          </li>
+          <li>
+            Wed 🌤️
+            <br />
+            <strong>14°C</strong> - 18°C
+          </li>
+          <li>
+            Thu 🌤️
+            <br />
+            <strong>14°C</strong> - 18°C
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <p>
+        This project was coded by
+        <a href="#" target="_blank">Bhumi Bathre</a> and is
+        <a href="https://github.com/" target="_blank"> on GitHub</a> and
+        <a href="https://www.netlify.com/" target="_blank">hosted on Netlify</a>
+      </p>
+    </footer>
+  </body>
+</html>

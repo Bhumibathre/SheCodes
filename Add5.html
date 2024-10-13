@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Theme Toggle with Images</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: black;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        margin: 0;
+        padding: 0;
+      }
+
+      .dark-theme {
+        background-color: black;
+        color: white;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .toggle-button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+
+      .toggle-button:hover {
+        background-color: #0056b3;
+      }
+
+      .image-gallery {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+        flex-wrap: wrap;
+      }
+
+      .image-gallery img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+        margin: 10px;
+        transition: transform 0.3s;
+      }
+
+      .image-gallery img:hover {
+        transform: scale(1.1);
+      }
+
+      .link-section {
+        margin-top: 20px;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Toggle Dark Theme</h1>
+      <p>Click the button below to switch between Light and Dark themes.</p>
+      <button class="toggle-button" onclick="toggleTheme()">Dark Theme</button>
+
+      <div class="image-gallery">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLmZfUMH--Uu26FI2e7-zMQrzSOFBByxV9uw&s"
+          alt="Singing Image 1"
+        />
+        <img
+          src="https://cdn.psychologytoday.com/sites/default/files/styles/image-article_inline_full/public/field_blog_entry_images/Selena_Gomez_Stars_Dance_San_Diego_IMG_0407_%2810915821835%29.jpg?itok=1gQmN1og"
+          alt="Singing Image 2"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZtL9Q-pdbQT1vM3iyhIxonRYKrfpeYJuorw&s"
+          alt="Singing Image 3"
+        />
+      </div>
+
+      <div class="link-section">
+        <p>
+          Learn more about singing on
+          <a href="https://en.wikipedia.org/wiki/Singing" target="_blank"
+            >Wikipedia</a
+          >.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("dark-theme");
+      }
+    </script>
+  </body>
+</html>
