@@ -1,0 +1,99 @@
+/* General body styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Styling the form and search bar */
+header form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+header input[type="search"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+  font-size: 16px;
+}
+
+header input[type="submit"] {
+  background-color: #4c51bf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+header input[type="submit"]:hover {
+  background-color: #2b2f76;
+}
+
+/* Main content styling */
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+/* Current weather display */
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.current-weather h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.current-weather div:last-child {
+  font-size: 48px;
+}
+
+/* Weather forecast styling */
+.forecast-weather ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-weather li {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888;
+}
+
+footer a {
+  color: #4c51bf;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
