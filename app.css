@@ -1,0 +1,32 @@
+/* defining styles of application */
+nav {
+  width: 100%;
+  text-align: center;
+  background: black;
+  /* position:fixed; */
+  position: sticky;
+  top: 1px;
+  left: 1px;
+}
+nav a {
+  display: inline-block;
+  width: 120px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 22px;
+  transition: 500ms;
+}
+nav a:hover {
+  background: blue;
+  color: yellow;
+}
+section {
+  text-align: center;
+}
+iframe {
+  width: 95%;
+  height: 500px;
+  border: 0;
+  background: #ffffcc;
+}
