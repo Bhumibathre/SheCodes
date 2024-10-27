@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Headings</title>
+    <style>
+        /* Styling for the h3 element */
+        h3 {
+            color: #4CAF50;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+
+        /* Styling for the h4 element */
+        h4 {
+            color: #555;
+            font-size: 18px;
+            font-style: italic;
+            text-align: left;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Welcome to My Webpage</h3>
+    <h4>This is a subheading styled with CSS</h4>
+
+    <p>This page contains a basic example of how to style `h3` and `h4` elements using CSS.</p>
+
+</body>
+</html>
